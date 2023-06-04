@@ -6,6 +6,7 @@ import {
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const initialState = {
+  quranStopIndex:0,
   token: null,
   user: null,
   loading: false,
@@ -38,15 +39,12 @@ export const getUserLoginData = createAsyncThunk(
 
 
 
-const authSlice = createSlice({
-  name: "auth",
+const quranSlice = createSlice({
+  name: "quran",
   initialState: initialState,
   reducers: {
-    RemoveUserData: state => {
-      state.loading = false;
-      state.user = null;
-      state.token = null;
-      state.error = null;
+    SetQuranStopIndex: (state,action) => {
+      state.quranStopIndex = action.payload;
     },
   },
   extraReducers: builder => {
@@ -73,6 +71,6 @@ const authSlice = createSlice({
   },
 });
 
-export const {RemoveUserData, SetUserPin} = authSlice.actions;
+export const {SetQuranStopIndex} = quranSlice.actions;
 
-export default authSlice.reducer;
+export default quranSlice.reducer;

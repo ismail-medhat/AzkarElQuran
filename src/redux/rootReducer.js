@@ -1,8 +1,8 @@
 import {combineReducers} from "@reduxjs/toolkit";
-import authReducer from "./authSlice";
+import quranReducer from "./quranSlice";
 
 const rootReducer = combineReducers({
-  auth: authReducer,
+  quran: quranReducer,
 });
 
 export default rootReducer;

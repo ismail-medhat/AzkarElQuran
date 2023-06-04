@@ -7,4 +7,5 @@ export const IMAGES = {
     notification: require('../Assets/Images/notification.png'),
     beads: require('../Assets/Images/beads.png'),
     splashLogo: require('../Assets/Images/splashLogo.png'),
+    book: require('../Assets/Images/book.jpg'),
 };

@@ -14,13 +14,17 @@ const styles = StyleSheet.create({
     width:ScaleWidth('94%'),
     marginHorizontal: ScaleWidth('2%'),
     backgroundColor: Colors.yellow,
-    borderLeftColor: Colors.red
+    borderLeftColor: Colors.red,
+    alignItems:'center',
+    justifyContent:'center',
+    padding:ScaleWidth(10)
   },
   
   itemTxt:{
-    fontFamily: Fonts.cairo_bold,
+    fontFamily: Fonts.regular,
     alignSelf: "center",
-    fontSize: ScaleWidth(15),
+    fontSize: ScaleWidth(20),
+    textAlign:'center',
   }
 });
 

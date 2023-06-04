@@ -12,13 +12,6 @@ const BottomNavigation = () => {
   return (
     <Tab.Navigator
       initialRouteName="PrayerIndex"
-      tabBarOptions={{
-        activeTintColor: Colors.black,
-        inactiveTintColor: Colors.black,
-        labelStyle: {
-          fontSize: ScaleHeight(11),
-        },
-      }}
       screenOptions={({route}) => ({
         headerShown: false,
         tabBarStyle: styles.tabBarStyles,
